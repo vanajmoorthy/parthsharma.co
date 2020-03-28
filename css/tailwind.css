@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: HelveticaBold;
+	src: url(../public/fonts/Helvetica\Neu\Bold.ttf);
+}
+
+@font-face {
+	font-family: HelveticaMedium;
+	src: url(../public/fonts/HelveticaNeue\Medium.ttf);
+}
+
+@font-face {
+	font-family: HelveticaLight;
+	src: url(../public/fonts/HelveticaNeue\Light.ttf);
+}
+
+.uline {
+	@apply underline;
+	text-decoration-color: #a5a5a5;
+}
+
+.rot {
+	/* transform: rotate(90deg); */
+	/* transform-origin: 10% 100%; */
+}
+
+.menu-link {
+	@apply font-hbold text-gray-700 py-3 text-2xl;
+}
+
+.alizn {
+	@apply items-center;
+}
+
+@screen sm {
+	.menu-link {
+		@apply px-8;
+	}
+	.alizn {
+		@apply items-start;
+	}
+}
+
+@screen md {
+	.menu-link {
+		@apply px-8;
+	}
+	.alizn {
+		@apply items-start;
+	}
+	.rot {
+		position: fixed;
+		/* transform-origin: 50% 400%; */
+		/* top: 100px; */
+		/* left: 1001px; 
+		right: -550px; */
+	}
+}
+
+@screen lg {
+	.menu-link {
+		@apply px-10;
+	}
+	.alizn {
+		@apply items-center;
+	}
+	.rot {
+		transform: rotate(0deg);
+		transform-origin: 0% 0%;
+	}
+}
+
+@screen xl {
+	.menu-link {
+		@apply px-10;
+	}
+	.alizn {
+		@apply items-center;
+	}
+	.rot {
+		transform: rotate(0deg);
+		transform-origin: 0% 0%;
+	}
+}
+
+.menu-font {
+	@apply font-hbold text-center text-gray-700 text-2xl;
+}
