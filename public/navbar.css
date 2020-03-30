@@ -2250,7 +2250,7 @@ body {
 
 a,a:active,a:hover,a:visited {
     text-decoration: none;
-    color: #000
+    /* color: #000 */
 }
 
 .animsition-overlay,body,html {
@@ -2313,6 +2313,7 @@ a,a:active,a:hover,a:visited {
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
+    color: #5e5e5e;
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
 }
 
@@ -2367,7 +2368,7 @@ a,a:active,a:hover,a:visited {
 }
 
 .active-link:after {
-    background-color: #000
+    background-color: rgb(112, 112, 112)
 }
 
 .active-link-white:after,.active-link:after {
