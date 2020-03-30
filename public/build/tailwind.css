@@ -10930,8 +10930,11 @@ video {
 }
 
 .rot {
-  /* transform: rotate(90deg); */
-  /* transform-origin: 10% 100%; */
+  position: fixed;
+  transform: rotate(90deg);
+  top: 150px;
+  /* left: 1001px; */
+  right: -120px;
 }
 
 .menu-link {
@@ -10944,6 +10947,8 @@ video {
 
 .alizn {
   align-items: center;
+  float: left;
+  padding-left: 1.25rem;
 }
 
 @media (min-width: 640px) {
@@ -10953,7 +10958,16 @@ video {
   }
 
   .alizn {
-    align-items: flex-start;
+    float: left;
+    padding-left: 1.25rem;
+  }
+
+  .rot {
+    position: fixed;
+    transform: rotate(90deg);
+    top: 240px;
+    /* left: 1001px; */
+    right: -189px;
   }
 }
 
@@ -10964,15 +10978,15 @@ video {
   }
 
   .alizn {
-    align-items: flex-start;
+    float: initial;
   }
 
   .rot {
     position: fixed;
-    /* transform-origin: 50% 400%; */
-    /* top: 100px; */
-    /* left: 1001px; 
-		right: -550px; */
+    transform: rotate(90deg);
+    top: 240px;
+    /* left: 1001px; */
+    right: -189px;
   }
 }
 
@@ -10983,12 +10997,12 @@ video {
   }
 
   .alizn {
-    align-items: center;
+    float: initial;
   }
 
   .rot {
+    position: static;
     transform: rotate(0deg);
-    transform-origin: 0% 0%;
   }
 }
 
@@ -10999,20 +11013,27 @@ video {
   }
 
   .alizn {
-    align-items: center;
+    float: initial;
   }
 
   .rot {
+    position: static;
     transform: rotate(0deg);
-    transform-origin: 0% 0%;
   }
 }
 
 .menu-font {
   font-family: HelveticaBold, sans-serif;
-  text-align: center;
   color: #4a5568;
   font-size: 1.5rem;
+}
+
+.c-div {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 200px);
 }
 
 @media (min-width: 640px) {

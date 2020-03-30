@@ -23,8 +23,11 @@
 }
 
 .rot {
-	/* transform: rotate(90deg); */
-	/* transform-origin: 10% 100%; */
+	position: fixed;
+    transform: rotate(90deg);
+    top: 150px;
+    /* left: 1001px; */
+    right: -120px;
 }
 
 .menu-link {
@@ -33,6 +36,9 @@
 
 .alizn {
 	@apply items-center;
+	float: left;
+	@apply pl-5;
+
 }
 
 @screen sm {
@@ -40,7 +46,15 @@
 		@apply px-8;
 	}
 	.alizn {
-		@apply items-start;
+		float: left;
+		@apply pl-5;
+	}
+	.rot {
+		position: fixed;
+		transform: rotate(90deg);
+		top: 240px;
+		/* left: 1001px; */
+		right: -189px;
 	}
 }
 
@@ -49,14 +63,14 @@
 		@apply px-8;
 	}
 	.alizn {
-		@apply items-start;
+		float: initial;
 	}
 	.rot {
 		position: fixed;
-		/* transform-origin: 50% 400%; */
-		/* top: 100px; */
-		/* left: 1001px; 
-		right: -550px; */
+		transform: rotate(90deg);
+		top: 240px;
+		/* left: 1001px; */
+		right: -189px;
 	}
 }
 
@@ -65,11 +79,12 @@
 		@apply px-10;
 	}
 	.alizn {
-		@apply items-center;
+		float: initial;
+
 	}
 	.rot {
+		position: static;
 		transform: rotate(0deg);
-		transform-origin: 0% 0%;
 	}
 }
 
@@ -78,14 +93,19 @@
 		@apply px-10;
 	}
 	.alizn {
-		@apply items-center;
+		float: initial;
 	}
 	.rot {
+		position: static;
 		transform: rotate(0deg);
-		transform-origin: 0% 0%;
 	}
 }
 
 .menu-font {
-	@apply font-hbold text-center text-gray-700 text-2xl;
+	@apply font-hbold text-gray-700 text-2xl;
+}
+
+.c-div {
+	@apply px-40 flex items-center;
+	height: calc(100vh - 200px);
 }
