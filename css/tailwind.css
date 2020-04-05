@@ -17,4 +17,25 @@
 	src: url(../public/fonts/HelveticaNeue\Light.ttf);
 }
 
- 
+#container {
+	height: 100vh;
+	/* position: ab; */
+	left: 3%;
+	-ms-transform: translateX(3%);
+	transform: translateX(3%);
+}
+
+#center {
+	position: absolute;
+	top: 45%;
+	-ms-transform: translateY(-45%);
+	transform: translateY(-45%);
+}
+
+#center2 {
+	width: 35rem;
+	position: absolute;
+	top: 60%;
+	-ms-transform: translateY(-60%);
+	transform: translateY(-60%);
+}
