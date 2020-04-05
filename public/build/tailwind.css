@@ -10943,6 +10943,34 @@ video {
   transform: translateY(-60%);
 }
 
+@media only screen and (max-width: 600px) {
+  #center2 {
+    width: 20rem;
+    top: 75%;
+    transform: translateY(-75%);
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  #center {
+    top: 35%;
+    transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #parth {
+    width: 200px;
+  }
+
+  #center {
+    top: 40%;
+    transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
