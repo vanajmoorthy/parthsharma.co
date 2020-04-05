@@ -2076,7 +2076,6 @@ dfn {
 
 mark {
     background-color: #ff0;
-    color: #000
 }
 
 small {
@@ -2405,7 +2404,6 @@ a,a:active,a:hover,a:visited {
 
 #projects li {
     list-style: none;
-    color: #000
 }
 
 .projects-off {
@@ -2630,7 +2628,6 @@ img {
 
 #next-projects li {
     list-style: none;
-    color: #000
 }
 
 .project-active {
@@ -2993,7 +2990,6 @@ img {
         width: 0;
         height: 2px;
         margin-top: 12px;
-        background-color: #000;
         top: 50%;
         left: 0;
         -webkit-transition: .3s ease-out;
@@ -3299,8 +3295,7 @@ img {
         color: #5b5b5b;
         -moz-text-fill-color: #fff;
         -webkit-text-fill-color: #fff;
-        -moz-text-stroke: .3vh #000;
-        -webkit-text-stroke: .3vh #000
+      
     }
 
     .featured {
@@ -3369,8 +3364,6 @@ img {
         color:#5b5b5b;
         -moz-text-fill-color: #fff;
         -webkit-text-fill-color: #fff;
-        -moz-text-stroke: .2vh #000;
-        -webkit-text-stroke: .2vh #000
     }
 }
 
